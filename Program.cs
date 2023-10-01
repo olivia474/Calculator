@@ -12,6 +12,7 @@ class Program
         
         Console.Write("Enter second radius: ");
         double radius2 = Convert.ToDouble(Console.ReadLine());
+    
         
         double AreaOfACircle = Math.PI * radius1 * radius2;
         Console.WriteLine("Area of a Circle = " + AreaOfACircle);
