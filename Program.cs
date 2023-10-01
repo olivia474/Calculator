@@ -15,7 +15,7 @@ class Program
         Console.Write("Please enter the first number: ");
         double firstNumber = Convert.ToDouble(Console.ReadLine());
         
-        Console.Write("Please enter thr second number: ");
+        Console.Write("Please enter the second number: ");
         double secondNumber = Convert.ToDouble(Console.ReadLine()); 
 
         if(Operator == "+") {
