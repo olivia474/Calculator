@@ -4,10 +4,13 @@ using System.Data.Common;
 namespace Calculator;
 class Program
 {
-    static void Main(string[] args)
-    {
+
+    static void PrintWelcomeMessage() {
+
         Console.WriteLine("Welcome to the calculator!");
-        Console.WriteLine("==========================");
+        Console.WriteLine("=========================="); }
+
+    static void PerformOneCalculation() {
 
         Console.Write("Please enter the operator: +, -, *, /: ");
         string? Operator = Console.ReadLine();
@@ -17,7 +20,7 @@ class Program
         
         Console.Write("Please enter the second number: ");
         double secondNumber = Convert.ToDouble(Console.ReadLine()); 
-
+    
         if(Operator == "+") {
             double equation = firstNumber + secondNumber;
             Console.WriteLine("The answer is: " + equation);
@@ -43,5 +46,11 @@ class Program
         }
 
         Console.ReadLine();
+    }
+    static void Main(string[] args)
+    {
+        PrintWelcomeMessage();
+        PerformOneCalculation();
+    
     }
 }
