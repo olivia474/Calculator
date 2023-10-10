@@ -15,4 +15,6 @@ class Program
         Console.WriteLine("Area of a Circle = " + AreaOfACircle);
 
         Console.ReadLine(); 
+    }
+}
        
